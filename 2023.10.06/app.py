@@ -16,9 +16,13 @@ def formatData(data):
 def avg(data):
     return sum(data)/len(data)
 
+def getIndex(data, i):
+    return data.index(highest)
+
+
 def highest(cs, he, ma):
     highest= max(ma)
-    indexOfBiggest=ma.index(highest)
+    i=getIndex()
     return [cs[indexOfBiggest], he[indexOfBiggest], ma[indexOfBiggest]]
 
 def higherThan(cs, he, ma, num)
@@ -35,5 +39,6 @@ def main():
     neve: {res[0]}
     Hegység:{res[1]}
     Magasság:{res[2]}""")
-
+    res=higherThan(dataCsucs, dataHegy, dataMagasság, input("Kérek egy magasságot: "))
+    print(res)
 main()
