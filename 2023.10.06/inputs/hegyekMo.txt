@@ -99,3 +99,4 @@ Zsérci-Nagy-Dél (1);Bükk-vidék;879
 Zsérci-Nagy-Dél (2);Bükk-vidék;877
 Zsérci-Nagy-Dél (3);Bükk-vidék;859
 Zsérci-Nagy-Dél (4);Bükk-vidék;850
+test;test;0
