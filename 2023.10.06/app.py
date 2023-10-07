@@ -1,5 +1,3 @@
-
-
 def readData():
     dataCsucs, dataHegy, dataMagasság=[], [], [] #a harom lista letrehozasa
     with  open("inputs/hegyekMo.txt", encoding="UTF-8") as data: #csak addig van megnyitva, ameddog hasznaljuk
@@ -10,7 +8,6 @@ def readData():
             dataHegy.append(data[1])
             dataMagasság.append(int(data[2]))
         return dataCsucs, dataHegy, dataMagasság #adatok returnolasa a main ciklusba
-
 def avg(data):
     return sum(data)/len(data) #lista szamainak atlaga
 
@@ -44,11 +41,11 @@ def convertToFeet(data): #labba konvertalja a bemeno adatot
     return number #visszaadja a szamot atkonvertalva
 
 def higerThan3000(dataMagasság): #teszteli jpogy a szam nagyobb e 3000nel
-    higher=[] #lista letrehozasa
+    higher=0 #lista letrehozasa
     for i in range(len(dataMagasság)): #lefut dataMagassag elemeinek szamaszor
         if data:=convertToFeet(dataMagasság[i])>3000: #teszteli hogy dataMagassa feetben merve > 3000 és ebbol keszít egy valtozot, hogy azt utanna meg lehessen szamolnui
-            higher.append(data) #ha igaz, hozzaadja a listahoz
-    return len(higher) #a lista hosszat returnoli
+            higher+=1 #ha igaz, +1
+    return higher #a a szamot returnoli
 
 def getStatistics(dataHegy, dataCsucs): #statisztikak letrehozasa
     statistics={} #dictionary letrehozasa
@@ -61,7 +58,7 @@ def getStatistics(dataHegy, dataCsucs): #statisztikak letrehozasa
 
 def outputFile(dataCsucs, dataMagasság): #kimeneti file
     with open("output.txt", "w", encoding="UTF-8") as data:   #csak addig van megnyitva, ameddog hasznaljuk
-        data.write("Hegycsúcs neve; Magasság láb") #header
+        data.write("Hegycsúcs neve; Magasság láb\n") #header
         for i in range(len(dataCsucs)): #lefut dataHegy elemeinek szamaszor
             data.write(f"{dataCsucs[i]};{convertToFeet(dataMagasság[i])}\n") #soronkent beleirja es atkonvertalja a szamot
 

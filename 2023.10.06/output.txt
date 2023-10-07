@@ -1,3 +1,4 @@
+Hegycsúcs neve; Magasság láb
 Ágasvár;2588.58
 Bálvány;3136.48
 Büszkés-hegy;3123.36
