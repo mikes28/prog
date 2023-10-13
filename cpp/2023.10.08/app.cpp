@@ -102,7 +102,10 @@ int main()
     std::cout << "Csúcs:  " << max_value.csucs << std::endl;
     std::cout << "Magasság:  " << max_value.magassag << std::endl;
 
+ 
 
+
+ 
     std::cout<<"Kérlek adj meg egy magasságot"<<std::endl;
     int inp;
     std::cin>>inp;
