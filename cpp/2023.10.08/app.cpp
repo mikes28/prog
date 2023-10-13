@@ -11,10 +11,11 @@ struct hills
     std::string hegyseg;
     std::string csucs;
     int magassag;
+    double magassag_in_feet;
 };
 std::map<std::string, int> Counts = {};
 
-void input(std::ifstream &input_file, std::vector<hills> &hegyek, hills &max_value, double &sum , double &max_value_borzsony){
+void input(std::ifstream &input_file, std::vector<hills> &hegyek, hills &max_value, double &sum , double &max_value_borzsony, int &higher3000){
 if (!input_file.is_open())
     {
         std::cout << "A file megnyitása meghiúsult" << std::endl;
@@ -38,8 +39,15 @@ if (!input_file.is_open())
                 data.hegyseg=token;
             }else{
                 data.magassag=std::stoi(token);
+                data.magassag_in_feet=std::stod(token)*3.280839895;
             }          
         }
+        if (data.magassag_in_feet>3000.0)
+        {
+            std::cout<<data.magassag_in_feet;
+        }
+        
+        
         sum+=data.magassag; /* ossz magassag kiszamolasa az atlagszamitashoz */
         if (data.magassag>max_value.magassag)
         {
@@ -65,6 +73,7 @@ void check(const std::vector<hills> &hegyek){
      for (const hills &d : hegyek)
 
         {   
+            std::cout<<"lefit";
             std::cout << "Hegység : " << d.hegyseg;
             std::cout << "Csúcs:  " << d.csucs;
             std::cout << "Magasság:  " << d.magassag << std::endl;
@@ -73,13 +82,13 @@ void check(const std::vector<hills> &hegyek){
 
 int main()
 {
-    
+    int higher3000;   
     double sum, max_value_borzsony;
     hills max_value={"", "", 0};
     std::ifstream input_file;
     input_file.open("inputs/hegyekMo.txt");
     std::vector<hills> hegyek;
-    input(input_file, hegyek, max_value, sum, max_value_borzsony);
+    input(input_file, hegyek, max_value, sum, max_value_borzsony, higher3000);
     check(hegyek);
 
     std::cout<<"Megadott hegységek száma: "<<hegyek.size()<<std::endl;
@@ -104,6 +113,7 @@ int main()
     {
         std::cout<<item.first<<" : "<<item.second<<std::endl;
     }
+    std::cout<<"3000 lábnál magasabb hegységek száma ";
     
     
 }
