@@ -1,0 +1,102 @@
+Hegycsúcs neve; Magasság láb
+Ágasvár;2588.58
+Bálvány;3136.48
+Büszkés-hegy;3123.36
+Cserepes-kő;2700.13
+Csikorgó;2552.49
+Csóványos;3077.43
+Darázs-hegy;2736.22
+Esztea-fő;2614.83
+Fekete-Sár-bérc;3051.18
+Felső-Borovnyák (2);3057.74
+Felső-Borovnyák (1);3100.39
+Fodor-hegy;3054.46
+Füstös-kő-bérc;2992.13
+Galya-tető;3162.73
+Galya-vár;2746.06
+Gergely-hegy;2568.9
+Győr-hegy;2726.38
+Hangyás-bérc (1);2831.36
+Hangyás-bérc (2);2801.84
+Hármas-határ-hegy;2608.27
+Három-kő;2965.88
+Hegyes-kő;2598.43
+Hermanház-tető;2900.26
+Hidas-bérc;3185.7
+Hosszú-bérc;2690.29
+Huta-bérc;3018.37
+Írott-kő;2893.7
+Ispán-hegy;2992.13
+Istállós-kő;3143.04
+Kékes;3326.77
+Kerek-hegy;2713.25
+Kerek-hegy;2591.86
+Kerek-réti-fő;2887.14
+Kis-Átal-kő;2582.02
+Kis-kő;2582.02
+Kis-kő-hát;3080.71
+Kis-Sár-bérc;3034.78
+Kis-Sas-kő;2723.1
+Kis-tanya;3005.25
+Kis-Virágos-hegy;2847.77
+Korom-bérc;2706.69
+Kőris-hegy;3097.11
+Kőrös-bérc;3136.48
+Köves-orom;2582.02
+Közép-bérc (1);2647.64
+Közép-bérc (2);2637.8
+Kukocsó-hegy;3087.27
+Kút-hegy;2880.58
+Küllő-hegy;2949.48
+Leány-hegy;2926.51
+Legyendi-galya;3070.87
+Magos-fa;3005.25
+Messzelátó;2805.12
+Mogyorós-orom;2749.34
+Muzsla;2644.36
+Nagy-Átal-kő;2700.13
+Nagy-Csipkés-tető;2851.05
+Nagy-Csipkés-tető (3);2765.75
+Nagy-Dél (1);2693.57
+Nagy-Dél (2);2621.39
+Nagy-Dél (3);2582.02
+Nagy-Hárs;2755.91
+Nagy-Hideg-hegy;2834.65
+Nagy-Inóc;2709.97
+Nagy-Kopasz;2962.6
+Nagy-kő-hát (1);3103.67
+Nagy-kő-hát (2);3070.87
+Nagy-Kőris;2696.85
+Nagy-Milic;2936.35
+Nyárju-hegy (1);2916.67
+Nyárju-hegy (2);2903.54
+Nyesett-vár;2667.32
+Őr-kő (2);2805.12
+Őr-kő (1);2887.14
+Pes-kő;2811.68
+Péter hegyese;3149.61
+Piszkés-tető;3097.11
+Pogányvár;2700.13
+Remete-hegy;2933.07
+Sándor-hegy;2854.33
+Sas-kő;2946.19
+Semmi-bérc;2972.44
+Som-tető;2568.9
+Szilvási-kő;3152.89
+Tányéros-töbör;3143.04
+Tar-kő;3116.8
+Teréz-hegy;2598.43
+Tót-hegyes;2670.6
+Tölgyes-bérc;2621.39
+Vadkert-tető;2736.22
+Vargai-Kurta-bérc (1);2693.57
+Vargai-Kurta-bérc (2);2687.01
+Varsa-tető;2857.61
+Veres-Sár-bérc;2992.13
+Virágos-sár (2);3116.8
+Virágos-Sár-hegy;3133.2
+Zsérci-Nagy-Dél (1);2883.86
+Zsérci-Nagy-Dél (2);2877.3
+Zsérci-Nagy-Dél (3);2818.24
+Zsérci-Nagy-Dél (4);2788.71
+test;0
