@@ -65,7 +65,7 @@ def main():
             uniq.add(i.city)
             print(i.city)
             
-    print(len(uniq))
+    print(f"Összesen{len(uniq)} városban volt esemény.")
 
 
 main()
