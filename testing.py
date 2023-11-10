@@ -1,12 +1,14 @@
-import random
+asked_count = int(input("Enter the count of numbers:"))
+count = 0
+curr_number = 1
 
-szam =random.randint(1,10)
-tipp=0
-while tipp != szam:
-    tipp=int(input("Tippelj: "))
-    if tipp > szam:
-        print("A tipp túl kicsi!")
-    else:
-        print("A tipp túl nagy!")
-else: 
-    print(f"A szam {szam} volt, és a tipp jó!")
+while count < asked_count:
+    divisible = True
+    for i in range(2, 10):
+        if curr_number % i != 0:
+            divisible = False
+            break
+    if divisible:
+        count += 1
+        print(curr_number)
+    curr_number += 1

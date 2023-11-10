@@ -137,7 +137,7 @@ int main()
     for (auto &item : Counts)
     {
         std::cout<<item.first<<" : "<<item.second<<"\n";
-    }
+    }((()))
     std::cout<<"3000 lábnál magasabb hegységek száma "<<higher3000<<"\n";
     
     
