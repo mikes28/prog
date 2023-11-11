@@ -25,7 +25,7 @@ def inputValidation(ques):
     else:
         return inp
         
-def searchForCity():
+def searchForCity(file_data):
     wcity=inputValidation("Kérem a város nevét: ")
     for item in file_data:
         if str(item.city).lower() == wcity.lower():
@@ -47,25 +47,21 @@ def main():
     """)
     a= list(int(obj.size) for obj in file_data)
     avg=round(sum(a)/len(a), 1)
-    print(avg)
+    print(f"Átlagos férőhely: {avg}")
 
-    print(len(list(b.name1 for b in file_data if b.name2!="n.a.")))
+    print(f"""Két névvel rendelkező stadionok: {len(list(b.name1 for b in file_data if b.name2!="n.a."))}""")
 
 
-    if searchForCity:
-        print("igen, van ilyen!")
+    if searchForCity(file_data):
+        print("igen, volt itt esemény!")
     else:
-        print("sajnos nincs ilyen")
+        print("Nem, nem volt itt esemény.")
     
     uniq=set()
     for i in file_data:
-        if i.city in uniq:
-            print("basoidasiods")
-        else:
-            uniq.add(i.city)
-            print(i.city)
-            
-    print(f"Összesen{len(uniq)} városban volt esemény.")
+        uniq.add(i.city)
+
+    print(f"Összesen {len(uniq)} városban volt esemény.")
 
 
 main()
