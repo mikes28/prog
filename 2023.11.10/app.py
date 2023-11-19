@@ -60,8 +60,12 @@ def main():
     uniq=set()
     for i in file_data:
         uniq.add(i.city)
+    
+    
 
     print(f"Összesen {len(uniq)} városban volt esemény.")
+
+
 
 
 main()

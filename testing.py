@@ -12,3 +12,4 @@ while count < asked_count:
         count += 1
         print(curr_number)
     curr_number += 1
+
