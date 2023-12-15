@@ -12,7 +12,7 @@ def penzFelvaltas(osszeg, aprok):
     return couts
 
 
-def safeInput(text):
+def safeInput(text) -> int:
     while True:
         try:
             return int(input(text))
@@ -21,7 +21,7 @@ def safeInput(text):
 
 def main():
     aprok=[500, 200, 100, 50, 20, 10, 5, 2, 1]
-    adatok=penzFelvaltas(int(safeInput("Kérlek add meg az összeget, amit fel szeretnél váltani!")),aprok)
+    adatok=penzFelvaltas(safeInput("Kérlek add meg az összeget, amit fel szeretnél váltani!"),aprok)
 
     for a in range(len(adatok)):
         if adatok[f"{aprok[a]}"] != 0:
