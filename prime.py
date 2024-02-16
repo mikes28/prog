@@ -1,12 +1,11 @@
-def PrimSzam(szam: list[int]):
+def PrimSzam(szam: int) -> bool:
     prim = 0
-    lista = list(range(10)) + szam
+    lista = list(range(1,11))
+    lista.append(szam)
+    lista=list(set(lista))
     for i in lista:
-        for num in szam:
-            if num % i == 0:
-                prim += 1
-                if prim > 2:
-                    return True
-    return False
+        if szam % i == 0:
+            prim += 1
+    return prim == 2
 
-print(PrimSzam([50]))
+print(PrimSzam(1548654865346532))
